@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test">
+    <classes>
+      <class name="com.norton.qa.tests.AccountPageTest"/>
+      <class name="com.norton.qa.tests.BaseTest"/>
+      <class name="com.norton.qa.tests.LoginPageTest"/>
+      <class name="com.norton.qa.tests.RegistrationTest"/>
+    </classes>
+  </test> <!-- Surefire test -->
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.norton.qa.tests.RegistrationTest">
+        <methods>
+          <include name="userRegistrationPageTest"/>
+        </methods>
+      </class> <!-- com.norton.qa.tests.RegistrationTest -->
+      <class name="com.norton.qa.tests.AccountPageTest">
+        <methods>
+          <include name="issearchfieldExistTest"/>
+          <include name="AccountPageHeaderTitleTest"/>
+          <include name="isViewAddressLinkExisteTest"/>
+          <include name="isLogoutLinkExistTest"/>
+          <include name="isManageSubscriptionLinkExisteTest"/>
+          <include name="dosearchTest"/>
+          <include name="AccountPageTitleTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.norton.qa.tests.AccountPageTest -->
+      <class name="com.norton.qa.tests.LoginPageTest">
+        <methods>
+          <include name="LoginPageTitleTest"/>
+          <include name="doLoginTest"/>
+          <include name="LoginPageUrlTest"/>
+          <include name="isForgotPwdLinkExistsTest"/>
+          <include name="isRegisterAccountLinkExistsTest"/>
+        </methods>
+      </class> <!-- com.norton.qa.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

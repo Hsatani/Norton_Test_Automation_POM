@@ -1,0 +1,4 @@
+com\norton\qa\tests\LoginPageTest.class
+com\norton\qa\tests\RegistrationTest.class
+com\norton\qa\tests\AccountPageTest.class
+com\norton\qa\tests\BaseTest.class
