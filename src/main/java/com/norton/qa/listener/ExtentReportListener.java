@@ -16,6 +16,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.norton.qa.factory.DriverFactory;
 
+
 public class ExtentReportListener extends DriverFactory implements ITestListener {
 
 	private static final String OUTPUT_FOLDER = "./build/";  
