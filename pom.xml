@@ -110,11 +110,15 @@
 			<version>2.14.1</version>
 		</dependency>
 
-		<dependency>
-			<groupId>RestAssuredTesting</groupId>
-			<artifactId>RestAssuredTesting</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.28</version>
+		<scope>provided</scope>
+	</dependency>
+
+		
   </dependencies>
 
   <build>
@@ -154,6 +158,20 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+		  <configuration>
+					<forkCount>3</forkCount>
+					<reuseForks>true</reuseForks>
+					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+					<suiteXmlFiles>
+						<suiteXmlFile>src/test/resource/testrunners/testng_regeression.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
+					</suiteXmlFiles>
+
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+					</argLine>
+
+				</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
