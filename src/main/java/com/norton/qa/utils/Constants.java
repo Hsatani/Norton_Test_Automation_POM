@@ -7,7 +7,7 @@ public class Constants {
 	public static final String HOME_PAGE_TITLE = "Norton Supply - America's Laundry and Dry Cleaning Supply Superstore";
 	
 	
-	public static final int DEFAULT_TIME_OUT = 5;
+	public static final int DEFAULT_TIME_OUT = 6;
 	
 	
 	public static final String ACCOUNT_PAGE_TITLE = "Account – Norton Supply";
