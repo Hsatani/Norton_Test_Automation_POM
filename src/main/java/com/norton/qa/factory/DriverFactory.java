@@ -1,4 +1,4 @@
-package com.norton.qa.factory;
+ package com.norton.qa.factory;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -39,7 +39,7 @@ public class DriverFactory {
 		if(browesername.equalsIgnoreCase("chrome")) {
 			//System.setProperty("webdriver.chrome.driver", "D:\\Downloads\\chromedriver_win32\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			tlDriver.set(new ChromeDriver());
+			tlDriver.set(new ChromeDriver());   
 			// driver = new ChromeDriver(); //launch chrome
 		} 
 		else if (browesername.equalsIgnoreCase("firefox")) {

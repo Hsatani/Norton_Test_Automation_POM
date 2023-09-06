@@ -11,6 +11,7 @@ public class HomePage {
 
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);

@@ -7,11 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.norton.qa.utils.ElementUtil;
+import com.norton.qa.utils.JavaScriptUtil;
 
 public class SearchResultPage {
 	
 	private WebDriver driver;
 	private ElementUtil eleUtil;
+	private JavaScriptUtil jsUtil;
 	private By productResultsItems = By.xpath("//div[@id='snize-search-results-grid-mode']//li");	
 	private By productItems = By.xpath("//div[@id='snize-search-results-grid-mode']//li//span[@class = 'snize-title']");
 	
@@ -19,6 +21,7 @@ public class SearchResultPage {
 	public SearchResultPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(driver);
+		jsUtil = new JavaScriptUtil(driver);
 	}
 	
 	

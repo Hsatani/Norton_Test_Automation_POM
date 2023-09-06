@@ -179,7 +179,7 @@ public class ElementUtil {
 	}
 
 	public void doSelectDropDownValue(By locator, String value) {
-		Select select = new Select(getElement(locator));
+		Select select = new Select(getElement(locator) );
 		List<WebElement> optionsList = select.getOptions();
 		for (WebElement e : optionsList) {
 			String text = e.getText();

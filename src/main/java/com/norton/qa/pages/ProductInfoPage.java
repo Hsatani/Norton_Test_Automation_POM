@@ -11,6 +11,10 @@ public class ProductInfoPage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
 	private JavaScriptUtil jsUtil;
+	
+	
+	
+	
 	private By productHeaderName = By.xpath("//div[@id = 'ProductSection-template--15270540574911__main-7430950981']//nav[@class = 'breadcrumb']");
 	private By quantitylabel = By.xpath("//label[@class = 'custom_lbl_cls']");
 	private By increaseItemButton = By.xpath("//button[@class = 'js-qty__adjust js-qty__adjust--minus']");
